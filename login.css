@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #343541;
+}
+
+.login {
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 50px auto;
+}
+
+.logo {
+  background: url('../assets/images/minimalist_sound_voice_logo_2.jpeg') center/contain no-repeat;
+  width: 100px;
+  height: 80px;
+}
+
+.welcome-back {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.label {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color:rgb(233, 241, 239);
+  color: white;
+}
+
+.input::placeholder {
+  color:#343541;
+}
+
+
+.continue-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: var(--gray-footprint, #9A9B9F);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.continue-button:hover {
+  background-color: var(--gray-footprint-hover, #7c7d81);
+}
+
+.dont-have-an-account-sign-up {
+  font-size: 14px;
+  color: #0FA47F;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+}

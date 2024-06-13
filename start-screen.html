@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start-Screen</title>
+  <link id="stylesheet" rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link id="main-stylesheet" rel="stylesheet" href="./start-screen.css">
+</head>
+
+<body>
+  <div class="overall">
+    <div class="left">
+      <div class="left-sidebar">
+        <div class="new-chat-button">
+          <span class="new-chat">New chat</span>
+        </div>
+        <div id="chat-history"></div> <!-- Added chat history container -->
+        <div class="light-mode" id="light-mode-toggle">
+          <span class="light-mode-1">Light mode</span>
+        </div>
+        <div class="new-button">
+          <span class="new-button-span" id="clear-history">Clear History</span>
+        </div>
+        <div class="logout">
+          <span class="log-out">Log out</span>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div id="subDiv1">
+        <span>
+          <img src="./logo.jpeg" alt="" class="logo-img">
+        </span>
+        <span>VAST</span>
+      </div>
+      <div class="chat-container" id="chat-container">
+        <!-- Chat messages will be appended here -->
+      </div>
+      <div id="subDiv2">
+        <div id="initial-content">
+          <div id="subDiv2">
+            <div class="card">
+              <h2>Examples</h2>
+              <ul>
+                <li>"Generate a horror story"</li>
+                <li>"Fictional story"</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h2>Capabilities</h2>
+              <ul>
+                <li>Able to get prompt through voice</li>
+                <li>Able to generate voice output</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h2>Limitations</h2>
+              <ul>
+                <li>May occasionally generate incorrect information</li>
+                <li>May occasionally produce harmful instructions or biased content</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="input-feild">
+          <input type="text" id="transcription" placeholder="enter your prompt here">
+          <button id="mic-button" class="not-recording">
+            <i class="fa fa-microphone microphone-ico"></i>
+          </button>
+          <button id="send-button">
+            <i class="material-icons">send</i> <!-- Send icon -->
+          </button>
+        </div>
+        <div class="ending">
+          VAST (VOICE ACTIVATED STORY TELLER)
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./lightmode.js"></script>
+</body>
+
+</html>

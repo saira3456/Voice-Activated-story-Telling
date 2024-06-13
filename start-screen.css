@@ -1,0 +1,276 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.overall {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  background-color: #444;
+  width: 20%;
+  height: 670px;
+  position: relative;
+}
+
+.left-sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.new-chat-button,
+.logout,
+.light-mode,
+.new-button {
+  width: 97%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  margin: 3px;
+  margin-left: 3px;
+  left: 0;
+  cursor: pointer;
+  border: 2px solid #444;
+  /* Added border */
+}
+
+.new-chat-button:hover,
+.logout:hover,
+.light-mode:hover,
+.new-button:hover {
+  background-color: #444;
+  color: white;
+  border: 1px solid #333;
+  /* Added border */
+}
+
+.new-chat-button {
+  top: 0;
+}
+
+.light-mode {
+  bottom: 50px;
+}
+
+.logout {
+  bottom: 0;
+}
+
+.new-button {
+  bottom: 100px;
+}
+
+.right {
+  background-color: #333;
+  height: 670px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.vast,
+.input-feild,
+.ending {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.vast {
+  top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.vast img {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.vast p {
+  margin: 0;
+}
+
+.input-feild {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  left: 20px;
+  display: flex;
+  height: 5%;
+  bottom: 0px;
+}
+
+.input-feild input[type="text"] {
+  background-color: #444;
+  flex: 1;
+  width: calc(100% - 100px);
+  margin-right: 10px;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.input-feild #send-button {
+  background-color: #444;
+  color: aliceblue;
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#subDiv1 {
+  font-size: 40px;
+  color: white;
+  height: 10%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+}
+
+#subDiv2 {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  width: 33%;
+  text-align: center;
+  color: white;
+  width: 30%;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #444;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card li {
+  background-color: #555;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.chat-container {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-message {
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 90%;
+}
+
+.chat-response {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 90%;
+  position: relative;
+}
+
+.chat-response button {
+  background-color: #555;
+  color: aliceblue;
+  border: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.ending {
+  color: rgb(175, 170, 170);
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  left: 20px;
+  text-align: center;
+  height: 7px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+#chat-history {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: aliceblue;
+  /* Space below the "New chat" button */
+  overflow-y: auto;
+  height: calc(100% - 200px);
+  /* Adjust height as necessary */
+}
+
+.chat-history-item {
+  padding: 10px;
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+/* Other existing styles */
+
+#chat-container {
+  max-height: 380px;
+  /* Adjust this value based on your design */
+  overflow-y: auto;
+}
+
+.not-recording {
+  background-color: #444;
+  color: aliceblue;
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.recording {
+  background-color: #444;
+  color:limegreen;
+  width: 100px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+.logo-img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}

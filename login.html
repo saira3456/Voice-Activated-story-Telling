@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" />
+  
+</head>
+
+<body>
+  <div class="login">
+    <div class="logo"></div>
+    <div class="welcome-back">Welcome back</div>
+
+    <div class="input-field">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" class="input" placeholder=" Enter your Email Address">
+      <div id="email-error" class="error"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="input-field">
+      <label for="password">Password</label>
+      <input type="password" id="password" class="input" placeholder="Enter Strong Password">
+      <div id="password-error" class="error"></div>
+      <div class="line"></div>
+    </div>
+
+    <button class="continue-button" onclick="validateForm()">Continue</button>
+
+    <p class="dont-have-an-account-sign-up">Don't have an account? <a href="./signup.html">Sign up</a></p>
+  </div>
+  <script src="login.js" defer></script> 
+</body>
+
+</html>
